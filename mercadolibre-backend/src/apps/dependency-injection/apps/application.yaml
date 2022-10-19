@@ -1,0 +1,17 @@
+services:
+
+  Apps.controllers.ProductGetItemController:
+    class: ../../../contexts/products/infrastructure/rest/controllers/ProductGetItemController
+    arguments: ["@Contexts.products.application.ProductManager"]
+
+  Apps.controllers.ProductListItemsController:
+    class: ../../../contexts/products/infrastructure/rest/controllers/ProductListItemsController
+    arguments: [ "@Contexts.products.application.ProductManager" ]
+
+  Contexts.products.application.ProductManager:
+    class: ../../../contexts/products/application/ProductManager
+    arguments: ["@Contexts.products.infrastructure.repositories.ProductRepository"]
+
+  Contexts.products.infrastructure.repositories.ProductRepository:
+    class: ../../../contexts/products/infrastructure/repositories/ProductRepository
+    arguments: [""]
