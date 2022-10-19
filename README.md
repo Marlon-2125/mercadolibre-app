@@ -1,6 +1,6 @@
 ![img](https://raw.githubusercontent.com/Marlon-2125/mercadolibre-frontend/main/docs/1.jpg)
 ![img](https://raw.githubusercontent.com/Marlon-2125/mercadolibre-frontend/main/docs/2.jpg)
-![img](https://raw.githubusercontent.com/Marlon-2125/mercadolibre-frontend/main/docs/3.jpg)
+![img](https://raw.githubusercontent.com/Marlon-2125/mercadolibre-frontend/main/docs/3.1.jpg)
 ![img](https://raw.githubusercontent.com/Marlon-2125/mercadolibre-frontend/main/docs/4.1.jpg)
 ![img](https://raw.githubusercontent.com/Marlon-2125/mercadolibre-frontend/main/docs/4.2.jpg)
 ![img](https://raw.githubusercontent.com/Marlon-2125/mercadolibre-frontend/main/docs/5.jpg)
