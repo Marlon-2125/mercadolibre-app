@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 export const Home = () => {
 	useEffect(() => {
-		document.title = 'Mercado Libre'
+		document.title = 'Mercado Libres'
 	}, [])
 
 	return (

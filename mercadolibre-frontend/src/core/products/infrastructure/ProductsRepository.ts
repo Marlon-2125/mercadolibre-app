@@ -1,9 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
+import fetch from 'isomorphic-fetch';
 
 export const productsRepository = createApi({
 	reducerPath: 'productsRepository',
 	baseQuery: fetchBaseQuery({
-		baseUrl: `http://localhost:5000/api/items`
+		baseUrl: `http://localhost:5000/api/items`,
+		fetchFn: fetch
 	}),
 	endpoints: (builder) => ({
 		searchProducts: builder.mutation<any, string>({

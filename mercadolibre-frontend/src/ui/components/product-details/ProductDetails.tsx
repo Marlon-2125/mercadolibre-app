@@ -9,7 +9,7 @@ export const ProductDetails = () => {
 
 	const imageProps = {
 		smallImage: {
-			alt: 'Mercado Libre',
+			alt: selectedProduct.title,
 			isFluidWidth: true,
 			src: selectedProduct.picture.replace(regex, '-F')
 		},

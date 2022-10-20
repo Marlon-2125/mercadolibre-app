@@ -2,9 +2,6 @@
   "name": "mercadolibre-backend",
   "version": "1.0.0",
   "description": "",
-  "repository": {
-    "url": "https://github.com/Marlon-2125/mercadolibre-backend"
-  },
   "license": "",
   "engines": {
     "node": ">=14.0.0",

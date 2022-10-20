@@ -1,23 +1,15 @@
-import App from './App.css'
-import {screen, render} from '@testing-library/react'
-import { MemoryRouter } from 'react-router-dom';
+import {prettyDOM, render} from '@testing-library/react'
+import '@testing-library/jest-dom'
+import App from './App';
 
-describe('HomeView Render', () => {  
+const mockedNavbarText = 'Mocked Navbar';
 
-    it('should render a home view', () => {
-        const homeView = render(<App />);
-    });
+jest.mock('./ui/components/navbar/Navbar', () => ({ Navbar: () => mockedNavbarText }));
 
-    it('should navigate to search page', () => {
-        const searchRoute = '/items/search=televisores'
-
-        const searchView = render(
-            <MemoryRouter initialEntries={[searchRoute]}>
-              <App />
-            </MemoryRouter>,
-          )
-
-        console.log(searchView);
-        
-    });
+describe('<App />', () => {  
+    it('should render a app view and find a navbar mocked', () => {
+        const appView = render(<App />);
+        const navbarTag = appView.queryByText(mockedNavbarText)        
+        expect(navbarTag).toBeInTheDocument();
+    });  
 });

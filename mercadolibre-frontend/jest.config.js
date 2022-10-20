@@ -11,4 +11,5 @@ module.exports = {
     transform: {
       '^.+\\.(ts|tsx)$': 'ts-jest',
     },
+    setupFilesAfterEnv: ["@testing-library/jest-dom"]
   };
