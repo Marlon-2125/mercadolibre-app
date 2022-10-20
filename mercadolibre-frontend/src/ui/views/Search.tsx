@@ -17,7 +17,7 @@ export const Search = () => {
 	const title = product !== undefined && product !== null && product.charAt(0).toUpperCase() + product.slice(1)
 
 	const { isLoading, data } = useObtainSearchedProductsQuery(title)
-
+	
 	const state = useAppSelector(state => state.searchProducts.productList)
 
 	const [getSelectedProduct, result] = useGetSelectedProductMutation()
@@ -72,7 +72,7 @@ export const Search = () => {
 											<li key={product.id}>
 												<div className='product-card w-full bg-white py-5 px-5 flex gap-5 '>
 													<div className='card-img-container w-40 h-40 min-w-[160px]'>
-														<img onClick={() => handleSelectProduct(product.id)} className='cursor-pointer object-contain' src={`${product.picture}`}/>
+														<img onClick={() => handleSelectProduct(product.id)} className='cursor-pointer object-contain' src={`${product.picture}`} alt={`${product.title}`}/>
 													</div>
 													<div onClick={() => handleSelectProduct(product.id)} className='w-auto product-info flex flex-col text-left gap-2 justify-center cursor-pointer'>														
 														<span className='font-medium text-2xl'>$ {product.price?.toLocaleString('es-AR')}

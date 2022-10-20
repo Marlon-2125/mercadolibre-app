@@ -10,6 +10,5 @@ module.exports = {
     testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|tsx)$',
     transform: {
       '^.+\\.(ts|tsx)$': 'ts-jest',
-    },
-    setupFilesAfterEnv: ["@testing-library/jest-dom"]
+    }
   };
